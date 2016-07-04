@@ -1,6 +1,6 @@
  interface ITesseract {
-  recognize(img:any, progress?:any,callback?:any): Promise<ITesseractResult>;
-  detect(img:any,lang?:string, callback?:any):Promise<ITesseractResult>;
+  recognize(img:HTMLImageElement, progress?:any,callback?:any): Promise<ITesseractResult>;
+  detect(img:HTMLImageElement,lang?:string, callback?:any):Promise<ITesseractResult>;
 }
 
 interface ITesseractResult {
